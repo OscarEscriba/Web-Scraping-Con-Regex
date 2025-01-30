@@ -24,7 +24,7 @@ def extraer_productos(html):
 def exportar_csv(productos, archivo_salida):
     with open(archivo_salida, "w", newline="", encoding="utf-8") as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["Nombre del Producto", "URL de la Imagen"])
+        writer.writerow(["URL de la imagen", "Nombre del producto"])
         writer.writerows(productos)
 
 # Cargar el HTML
